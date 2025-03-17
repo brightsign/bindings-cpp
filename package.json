@@ -10,8 +10,7 @@
     "@serialport/parser-readline": "^9.0.0",
     "bindings": "^1.5.0",
     "debug": "^4.1.1",
-    "nan": "^2.14.1",
-    "prebuild-install": "^5.3.3"
+    "nan": "github:brightsign/nan#6170c3b"
   },
   "devDependencies": {
     "@serialport/binding-mock": "^9.0.0"
@@ -20,9 +19,8 @@
     "node": ">=8.6.0"
   },
   "scripts": {
-    "install": "prebuild-install --tag-prefix @serialport/bindings@ || node-gyp rebuild",
+    "install": "node-gyp rebuild",
     "lint": "cc --verbose",
-    "prebuild": "prebuild --all --force --strip --verbose --tag-prefix @serialport/bindings@",
     "rebuild": "node-gyp rebuild"
   },
   "publishConfig": {
