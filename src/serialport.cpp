@@ -480,4 +480,4 @@ NAN_MODULE_INIT(init) {
   #endif
 }
 
-NODE_MODULE(serialport, init);
+NAN_MODULE_WORKER_ENABLED(serialport, init);
